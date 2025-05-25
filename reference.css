@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --primary-colour: #aedff6;
+    --base: #83bee7;
+    --darker: #2e4a66;
+    --dark-base: #83bee7;
+    --light-blue: #cdefff;
+    --secondary-colour: #fffef9;
+    --dark-blue: #2e4a66;
+    --underline-blue: #456da1;
+    --bright-blue: #D6EBF3;
+    --text-dark: #3b3b3b;
+    --text-light: #314B6E;
+    --swam-wing: #fffefc;
+}
+
+.con11 {
+    background-image: url("../image/header-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
