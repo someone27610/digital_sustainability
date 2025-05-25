@@ -1,0 +1,376 @@
+
+
+
+
+
+/******************** General Reset Start ********************/
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/******************** General Reset End ********************/
+
+/******************** Body & Page Setup Start ********************/
+.login-page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******************** Body & Page Setup End ********************/
+
+/******************** Main Container Start ********************/
+.container {
+  background: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 95vw;
+  max-width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/******************** Main Container End ********************/
+
+/******************** Left Section (Image + Text) Start ********************/
+.left {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative; /* ✅ Add this line */
+}
+
+
+.left img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.left h2 {
+  font-size: 24px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 16px;
+  color: #1a237e;
+  margin: 0;
+}
+
+/******************** Left Section (Image + Text) End ********************/
+
+/******************** Right Section (Form) Start ********************/
+.right {
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+}
+
+.login-heading {
+  font-size: 28px;
+  color: #000731;
+  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.sub-heading {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/******************** Right Section (Form) End ********************/
+
+/******************** Form Input Groups Start ********************/
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #333;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/******************** Form Input Groups End ********************/
+
+/******************** Password Field Container Start ********************/
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+
+.remember-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.remember-show label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+}
+
+.show-password-label input {
+  accent-color: #ccc;
+}
+
+
+/******************** Password Field Container End ********************/
+
+/******************** Remember Me Checkbox Start ********************/
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/******************** Remember Me Checkbox End ********************/
+
+/******************** Login Button Styling Start ********************/
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0;
+}
+
+.login-button:hover {
+  background-color: #42a5f5;
+}
+
+/******************** Login Button Styling End ********************/
+
+/******************** Forgot Password & Signup Links Start ********************/
+.forgot-password,
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a,
+.signup-link a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover,
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/******************** Forgot Password & Signup Links End ********************/
+
+/******************** Responsive Design Start ********************/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100vh;
+  }
+
+  .left {
+    padding: 50px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+}
+
+/******************** Responsive Design End ********************/
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+
+  padding: 12px 18px;
+  color: #1d3557;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgb(194, 233, 255);
+  color: #0b305c;
+  transform: translateY(-1px);
+}
+
+.back-button i {
+  font-size: 16px;
+}
+
+/******************** Responsive Design Start ********************/
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .left img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 30px 20px;
+    border: none;
+  }
+
+  .left img {
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .left h2 {
+    font-size: 22px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .right {
+    padding-top: 10px;
+  }
+
+  .login-heading {
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 14px;
+  }
+
+  .input-label,
+  .input-field,
+  .remember-show,
+  .forgot-password,
+  .signup-link {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .back-button {
+    padding: 8px 14px;
+    font-size: 14px;
+    gap: 4px;
+  }
+
+  .back-button i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left img {
+    max-height: 160px;
+  }
+
+  .login-heading {
+    font-size: 20px;
+  }
+
+  .sub-heading {
+    font-size: 13px;
+  }
+
+  .input-field {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-link {
+    font-size: 13px;
+  }
+}
+/******************** Responsive Design End ********************/

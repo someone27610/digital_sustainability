@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="log-in.css">
+
+    <!--ICON-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      <!--Favicon-->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+</head>
+
+<body class="login-page">
+    <div class="container">
+        <div class="left">
+             <button class="back-button" onclick="history.back()">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+            <img src="image/img_03.svg" alt="Login Image"
+                style="max-width: 100%; border-radius: 15px; margin-bottom: 20px;">
+            <div>
+                <h2>Your journey continues here…</h2>
+                <p>just log in 💻✨👀</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2 class="login-heading">Welcome Back!</h2>
+            <p class="sub-heading">Please log in to your account</p>
+
+            <form action="#" method="POST" id="loginForm">
+                <div class="form-control">
+                    <label for="username" class="input-label">Username</label>
+                    <input type="text" id="username" name="username" class="input-field " required
+                        placeholder="Enter your username">
+                </div>
+
+                <div class="form-control">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" id="password" name="password" class="input-field" required
+                        placeholder="Enter your password">
+                </div>
+
+                <div class="form-control remember-show">
+                    <label>
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        Remember Me
+                    </label>
+
+                    <label class="show-password-label">
+                        <input type="checkbox"
+                            onclick="document.getElementById('password').type = this.checked ? 'text' : 'password';">
+                        Show Password
+                    </label>
+                </div>
+
+
+                <button type="submit" class="login-button">Log In</button>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <div class="signup-link">
+                    <span>Don't have an account?</span> <a href="sign-up.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

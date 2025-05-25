@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sustainability Quiz</title>
+  <!--CSS style link-->
+  <link rel="stylesheet" href="styleq.css">
+
+  <!-- Bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Font link-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!--Navbar link-->
+  <link rel="stylesheet" href="nav.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!--Tick icon link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--Footer link-->
+  <link rel="stylesheet" href="footer.css">
+
+  <!--Material symbols-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="Imagequiz/favicon.png">
+  <!-- Your external CSS file -->
+  <link rel="stylesheet" href="styleq.css" />
+
+  <!-- Font awesome icon start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font awesome icon end -->
+</head>
+
+<body>
+  <!--Navbar Start-->
+        <div class="container mt-3">
+            <nav class="navbar navbar-expand-lg mynavbar">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="image_04/logo.gif" alt="Logo" class="logo_gif me-2" />
+                    <span class="site-name">Carbon<span class="ctrl">CTRL</span></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav mx-auto gap-2">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-bs-toggle="dropdown">Know Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="Review.html">Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown">Sustainability Info</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="educational_page.html">Sustainable Tech</a></li>
+                                <li><a class="dropdown-item" href="tips.html">How to stay digitally sustainable?</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Awearness.html">E-Waste</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="Quizzeshome.html" class="nav-link">Quiz</a></li>
+                        <li class="nav-item"><a href="recommendation.html" class="nav-link">Resources</a></li>
+                        <li class="nav-item">
+                            <button type="button" class="btn sign"><a href="sign-up.html">Sign
+                                    up</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn sign"><a href="log-in.html">Log
+                                    in</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Navbar End-->
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section text-center mt-3">
+    <div class="container">
+      <h1>How Well Do You Know Sustainability?</h1>
+      <p class="lead mt-3 mb-4">Test your knowledge and discover how we can help the planet!</p>
+      <a href="#quiz-section" class="btn btn-primary btn-lg">Start Quiz</a>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section id="info" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold mb-3">Don’t just scroll — take control!</h2>
+          <p class="mb-0">Think learning about sustainability is boring? Think again! This quiz isn’t just about facts —
+            it’s a fun way to test your eco-smarts while picking up cool tips on how to help the planet. Whether you’re
+            a recycling rookie or a green genius, there’s something for everyone. So don’t just scroll by — take the
+            quiz, don’t delay, save the Earth the fun way! Every answer gets you one step closer to living a more
+            sustainable life (and hey, bragging rights never hurt).</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="Imagequiz/girllypop.gif" class="" alt="Sustainability" style="max-width: 340px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts Cards Section -->
+  <section id="facts" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">🌱 Sustainability Quiz Grading Scale (Out of 10 Marks)</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card fact-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🔴 0 – 4 marks: Earth Explorer</h5>
+              <p class="card-text">Just getting started!
+                It’s okay — everyone begins somewhere. This is your chance to grow your knowledge and become more
+                planet-wise. Give it another shot! 🌱
+                Grade: D or below</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card fact-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🟡 5 – 7 marks: Green Learner</h5>
+              <p class="card-text">You're on your way!
+                You know the basics but there’s still more to learn. With a bit more effort, you’ll be a full-on eco
+                champ in no time. Keep going! 🍃
+                Grade: B to C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card fact-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🟢 8 – 10 marks: Eco Expert</h5>
+              <p class="card-text">You know your stuff!
+                You've got a strong grip on sustainability and how to live green. You’re ready to take action and even
+                teach others. Mother Earth is proud of you! 🌍💚
+                Grade: A
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section id="quiz-section" class="py-5 bg-light gallery">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">QUIZZES</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="align-items: center;">
+            <img src="Imagequiz/brain1.gif" class="img-fluid rounded-circle mb-3"
+              style="width: 90px; height: 90px; object-fit: cover;" alt="Energy Quiz">
+            <h5 class="fw-bold">Quiz 1: E-Waste and Its Impact</h5>
+            <p class="text-muted">Test your knowladge about E-Waste and Its Impact</p>
+            <a href="Quizzone.html" class="btn btn-outline-primary btn-sm rounded-pill">Quiz 1</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="align-items: center;">
+            <img src="Imagequiz/brain2.gif" class="img-fluid rounded-circle mb-3"
+              style="width: 90px; height: 90px; object-fit: cover; " alt="Plastic Awareness Quiz">
+            <h5 class="fw-bold">Quiz 2: Digital Sustainability and Responsible Tech Use</h5>
+            <p class="text-muted">Test your knowladge about Digital Sustainability and Responsible Tech Use</p>
+            <a href="Quizztwo.html" class="btn btn-outline-primary btn-sm rounded-pill">Quiz 2</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center" style="align-items: center;">
+            <img src="Imagequiz/brain3.gif" class="img-fluid rounded-circle mb-3"
+              style="width: 90px; height: 90px; object-fit: cover; " alt="Water Conservation Quiz">
+            <h5 class="fw-bold">Water Conservation</h5>
+            <p class="text-muted">Discover ways to conserve water in daily life and its importance.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">Quiz 3</a>
+          </div>
+  </section>
+
+  <section>
+        <footer>
+            <div class="row1">
+                <div class="column">
+                    <div class="logo-text">
+                        <img src="image_04/favicon.png" alt="Logo" class="logo" />
+                        <span class="site-name">Carbon<span class="ctrl">CTRL</span></span>
+                    </div>
+                    <p>Promoting mindful tech use for a greener tomorrow. Join us on the path to digital sustainability.
+                    </p>
+                </div>
+                <div class="column">
+                    <h3 class="und">Office <div class="underline"><span></span></div>
+                    </h3>
+                    <p>EDUSN Road</p>
+                    <p>Kamaryut Township</p>
+                    <p>Yangon City, Myanmar</p>
+                    <p class="email-id">year8class2.gmail.com</p>
+                    <p class="phone-number">+95 123456789</p>
+                </div>
+                <div class="column">
+                    <h3 class="und">Links <div class="underline"><span></span></div>
+                    </h3>
+                    <ul class="footer-ul">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Know Us</a></li>
+                        <li><a href="#">Sustainability Tech</a></li>
+                        <li><a href="#">Stay Digitally Sustainable</a></li>
+                        <li><a href="#">E-waste</a></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="und">Message Us <div class="underline"><span></span></div>
+                    </h3>
+                    <form class="footer-form">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="reference-link">
+                        <a href="reference.html">References</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr" />
+            <p class="copyright">
+                © 2025 Year-8 (Class 2), Group 3 – All rights reserved | Built for a digitally sustainable future.
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>

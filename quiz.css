@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: url('Imagequiz/ChatGPT\ Image\ May\ 12\,\ 2025\,\ 02_33_34\ PM.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.app {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    color: #535252;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.app h1 {
+    font-size: 25px;
+    color:#83bee7;
+    font-weight: 600;
+    border-bottom:1px solid #2e4a66;
+    padding-bottom:30px;
+}
+.quiz {
+    padding: 20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    color:#3b3b3b;
+    font-weight: 600;
+}
+.btn {
+    background: #fff;
+    color: #3b3b3b;
+    font-weight:500;
+    width:100%;
+    border: 1px solid #2e4a66;
+    padding: 10px;
+    margin:10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.btn:hover:not([disabled]){
+    background: #83bee7;
+    color: #fff;
+}
+.btn:disabled{
+    cursor:no-drop;
+    opacity:0.6;
+}
+#next-btn{
+    background: #2e4a66;
+    color: #fff;
+    font-weight:500;
+    width:50px;
+    border:0;
+    padding: 10px;
+    margin:20px auto 0 ;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+    margin-top: 20px;
+}
+#next-btn,
+#go-back-btn {
+    width: auto;
+    padding: 10px 20px;
+}
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Slightly closer space between buttons */
+    margin-top: 20px;
+}
+
+#play-again-btn,
+#go-back-btn {
+    width: auto;
+    padding: 10px 20px;
+}
