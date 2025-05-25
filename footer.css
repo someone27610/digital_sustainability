@@ -1,0 +1,276 @@
+/* Footer section start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-colour: #aedff6;
+  --base: #83bee7;
+  --darker: #2e4a66;
+  --dark-base: #83bee7;
+  --light-blue: #cdefff;
+  --secondary-colour: #fffef9;
+  --dark-blue: #2e4a66;
+  --underline-blue: #456da1;
+  --bright-blue: #d6ebf3;
+  --text-dark: #3b3b3b;
+  --text-light: #314b6e;
+  --swam-wing: #fffefc;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #9bc9ea, #b3e2f7, #c9e7f5);
+  color: var(--text-dark);
+  padding: 100px 0 30px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.row1 {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 25%;
+  padding: 10px;
+  color: var(--text-dark);
+}
+
+.column:nth-child(2),
+.column:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 0;
+}
+
+.und {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  color: var(--text-dark);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid var(--dark-blue);
+  margin-top: 20px;
+  color: var(--text-dark);
+}
+
+.footer-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-ul li {
+  margin-bottom: 12px;
+}
+
+.footer-ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.footer-form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-dark);
+  margin-bottom: 50px;
+}
+
+.footer-form i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--text-dark);
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: var(--text-dark);
+  border: 0;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: var(--text-dark);
+  opacity: 1;
+}
+
+.footer-form button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button i {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--base);
+  background: var(--swam-wing);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer-hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--text-dark);
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  background: var(--swam-wing);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: var(--dark-blue);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+.phone-number {
+  font-size: 16px;
+  color: var(--swam-wing);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000020;
+  letter-spacing: 1px;
+}
+
+.ctrl {
+  font-weight: 700;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 700px) {
+  footer {
+    padding: 50px 0 20px;
+    bottom: unset;
+  }
+
+  .row1 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .column {
+    flex-basis: 100%;
+    padding: 10px 0;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-form input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-form button {
+    align-self: flex-end;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons i {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-hr {
+    margin: 30px auto;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+.reference-link {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.reference-link a {
+  color: #001c3c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reference-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,145 @@
+/* Base Page Styles */
+body {
+  background-color: #f4faff;
+  color: #444f5a;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2e4a66;
+  font-weight: 700;
+}
+
+a {
+  color: #4a6a8c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #83bee7;
+}
+
+
+/* Cards */
+.card {
+  border: 1px solid #001c35;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(131, 190, 231, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #444f5a;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(131, 190, 231, 0.25);
+  border-color: #83bee7;
+}
+
+.card-title {
+  color: #2e4a66;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #444f5a;
+  line-height: 1.5;
+}
+
+
+/* Accordion */
+.accordion-button {
+  background: linear-gradient(135deg, #cdefff, #e6f7ff);
+  color: #2e4a66;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(74, 106, 140, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444f5a' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #83bee7, #aadcff);
+  color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 4px 12px rgba(74, 106, 140, 0.15);
+}
+
+.accordion-button:hover {
+  background: linear-gradient(135deg, #83ccf5, #aadcff);
+  color: #ffffff;
+}
+
+.accordion-body {
+  background-color: #f4faff;
+  color: #444f5a;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 6px rgba(74, 106, 140, 0.1);
+  border-top: 1px solid #d6ebf3;
+}
+
+.accordion-item {
+  background: none;
+  border: none;
+  margin-bottom: 14px;
+}
+
+
+/* Buttons */
+.btn-success {
+  background: linear-gradient(135deg, #4a6a8c, #5c7fa5);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(74, 106, 140, 0.2);
+  transition: all 0.4s ease;
+}
+
+.btn-success:hover {
+  background: #dcf0ff;
+  color: #4a6a8c;
+  box-shadow: 0 6px 16px rgba(74, 106, 140, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+  background: transparent;
+  color: #4a6a8c;
+  border: 2px solid #4a6a8c;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 8px rgba(74, 106, 140, 0.1);
+}
+
+.btn-outline-secondary:hover {
+  background-color: #4a6a8c;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(74, 106, 140, 0.25);
+  transform: translateY(-2px);
+}
+

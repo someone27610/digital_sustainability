@@ -1,0 +1,177 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container and line */
+.timeline-centered {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.timeline-centered::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background: #d0ecff;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/* Entry base */
+.timeline-entry {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline-entry.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-entry.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Inner container */
+.timeline-entry-inner {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Dot */
+.timeline-entry-inner::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background: #007bbd;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-entry.left .timeline-entry-inner::before {
+    right: -49px;
+}
+
+.timeline-entry.right .timeline-entry-inner::before {
+    left: -49px;
+}
+
+/* Card */
+.timeline-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card h5 {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.timeline-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Badge */
+.timeline-badge {
+    background-color: #d0ecff;
+    color: #007bbd;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Header styles */
+.header-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4c5a62;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.header-content p {
+    font-size: 1.15rem;
+    color: #4f4f4f;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.challenge-header {
+    padding: 80px 20px 60px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 900px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background: #005f91;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #005f91;
+}
+
+/* ✅ RESPONSIVE FIXES */
+@media screen and (max-width: 991px) {
+    .timeline-centered::before {
+        left: 8px;
+    }
+
+    .timeline-entry {
+        width: 100%;
+        padding: 20px 20px 20px 40px;
+        text-align: left;
+    }
+
+    .timeline-entry.left,
+    .timeline-entry.right {
+        left: 0;
+    }
+
+    .timeline-entry-inner::before {
+        left: -32px !important;
+        right: auto !important;
+    }
+}
