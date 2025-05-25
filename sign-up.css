@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+}
+
+/******************** General Reset & Font ********************/
+
+.login-page {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/******************** General Reset & Font End ********************/
+
+/******************** Container Layout ********************/
+.login-page .container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/******************** Container Layout End ********************/
+
+/******************** Left Side (Image + Text) ********************/
+.left {
+  position: relative; /* Add this */
+  flex: 1;
+  background-color: #e1efff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+.left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.left p {
+  font-size: 16px;
+  color: #555;
+}
+
+/******************** Left Side End ********************/
+
+/******************** Right Side (Form) ********************/
+.right {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;  /* Limit how wide the right panel can be */
+}
+
+
+
+
+.login-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #1d3557;
+}
+
+.sub-heading {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/******************** Right Side End ********************/
+
+/******************** Input Groups ********************/
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/******************** Input Groups End ********************/
+
+/******************** Password Field Container ********************/
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container .input-field {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+}
+
+/******************** Password Field Container End ********************/
+
+/******************** Remember Me & Forgot Password ********************/
+.remember-me {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.remember-me input {
+  margin-right: 6px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/******************** Remember Me & Forgot Password End ********************/
+
+/******************** Login Button ********************/
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0;
+}
+
+.login-button:hover {
+  background-color: #357ab8;
+}
+
+/******************** Login Button End ********************/
+
+/******************** Signup / Login Links ********************/
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/******************** Signup / Login Links End ********************/
+
+/******************** Social Signup Section ********************/
+.social-signup {
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social-icon i {
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Google icon hover - classic Google red */
+.social-icon.google i:hover {
+  color: #DB4437;
+  /* Google Red */
+  transform: scale(1.3);
+}
+
+/* TikTok icon hover - brand cyan */
+.social-icon.tiktok i:hover {
+  color: #69C9D0;
+  /* TikTok Cyan */
+  transform: scale(1.3);
+}
+
+/* Facebook icon hover - official blue */
+.social-icon.facebook i:hover {
+  color: #1877F2;
+  /* Facebook Blue */
+  transform: scale(1.3);
+}
+
+/******************** Social Signup Section End ********************/
+
+/******************** Responsive Design ********************/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .left,
+  .right {
+    padding: 20px;
+    border: none;
+    width: 100%;
+  }
+
+  .left {
+    padding-bottom: 10px;
+  }
+
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .right {
+    padding-top: 10px;
+  }
+
+  .login-heading {
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 14px;
+  }
+
+  .input-label,
+  .input-field,
+  .remember-me,
+  .forgot-password,
+  .signup-link {
+    font-size: 14px;
+  }
+
+  .social-signup p {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left img {
+    max-height: 180px;
+    object-fit: contain;
+  }
+
+  .login-heading {
+    font-size: 20px;
+  }
+
+  .sub-heading {
+    font-size: 13px;
+  }
+
+  .input-field {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .social-icon i {
+    font-size: 20px;
+  }
+
+  .signup-link {
+    font-size: 13px;
+  }
+}
+
+/******************** Responsive Design End ********************/
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+
+  padding: 12px 18px;
+  color: #1d3557;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgb(194, 233, 255);
+  color: #0b305c;
+  transform: translateY(-1px);
+}
+
+.back-button i {
+  font-size: 16px;
+}
+
+
+
+
+
+

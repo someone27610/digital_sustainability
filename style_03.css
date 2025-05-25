@@ -1,0 +1,661 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/********************What is digital sustainability? style start ********************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.digital-sustainability-section {
+    background: #fdfdfd;
+    padding: 70px 25px;
+    max-width: 1100px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.digital-sustainability-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 50px;
+}
+
+.digital-sustainability-text {
+    flex: 1 1 50%;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.digital-sustainability-text h2 {
+    color: #1b2b41;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.digital-sustainability-text .highlight-keyword {
+    color: #476bb9;
+    font-weight: 600;
+}
+
+.digital-sustainability-text p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.digital-sustainability-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 25px 0;
+}
+
+.digital-sustainability-list li {
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+}
+
+.digital-sustainability-list i {
+    color: #165ca3;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+.digital-sustainability-highlight {
+    background-color: #e7f1f9;
+    border-left: 6px solid #7a97d5;
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #06225f;
+    font-weight: 500;
+}
+
+.digital-sustainability-image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.digital-sustainability-image img {
+    max-width: 100%;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.digital-sustainability-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/********************What is digital sustainability? style end ********************/
+
+/********************How does digitalization help manage sustainability? style start********************/
+
+.dashboard {
+    background: linear-gradient(to bottom, #f9fafb, #ffffff);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #1b1c20;
+}
+
+.dashboard .cards {
+    position: relative;
+    height: 430px; /* Match .card height */
+    cursor: pointer;
+}
+
+.dashboard .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content and button are spaced */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 850px;
+    height: 430px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+    text-align: left;
+    overflow-y: auto;
+    border-left: 4px solid #4a90e2;
+    animation: fadeInCard 0.6s ease;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+.dashboard .card.active {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
+}
+
+.dashboard .card h2 {
+    font-size: 1.3rem;
+    color: #2b4f75;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard .card p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.dashboard .card ul {
+    padding-left: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#next-card-btn {
+    margin-top: auto;
+    align-self:center;
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+#next-card-btn:hover {
+    background-color: #1d3b57;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .dashboard .cards {
+        position: relative;
+        height: 430px;
+    }
+
+    .dashboard .card {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(0.9);
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 0;
+    }
+
+    .dashboard .card.active {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+        z-index: 1;
+    }
+}
+
+/********************How does digitalization help manage sustainability? style end********************/
+
+
+/********************Smart Analysis style start********************/
+.smart-analysis-slider {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1250px;
+    margin: 40px auto;
+    border-radius: 16px;
+    
+    overflow-x: hidden;
+}
+
+.smart-slider-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.smart-slider-track {
+    display: flex;
+    gap: 2.6rem;
+    padding: 1rem;
+    scroll-snap-align: start;
+    width: max-content;
+}
+.smart-slider-card {
+    flex: 0 0 360px;
+    background-color: white;
+    color: #04101f;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 6px solid #7a97d5;
+    border-top: 2px solid #7a97d5;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px; /* 👈 increase card height */
+}
+
+
+.smart-slider-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-left-color: #7a97d5;
+    border-top-color: #7a97d5;
+}
+
+
+
+.smart-slider-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.smart-slider-card h5 {
+    font-size: 1rem;
+    color: #1f2d3d;
+    margin-bottom: 0.5rem;
+}
+
+.smart-slider-card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.smart-slider-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.slider-card {
+    min-width: 80%;
+    /* Increase width */
+    max-width: 600px;
+    /* Optional: bump max width */
+    height: auto;
+    /* Add a fixed height if desired, e.g*/
+    height: 420px;
+    /* or whatever height you prefer */
+}
+
+/********************Smart Analysis style end********************/
+
+/********************What is digital carbon footprint? style start********************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.carbon-impact-section {
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.carbon-impact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.carbon-impact-text {
+    flex: 1 1 55%;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.carbon-impact-text h2 {
+    color: #06244a;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+.highlight-keyword {
+    color: #3b82f6;
+}
+
+.carbon-impact-text p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.carbon-impact-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.carbon-impact-list li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.carbon-impact-list i {
+    color: #3b82f6;
+    margin-right: 10px;
+}
+
+.carbon-impact-highlight {
+    background-color: #e8f1ff;
+    border-left: 5px solid #2563eb;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.carbon-impact-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    animation: fadeInRight 1s ease forwards;
+}
+
+.carbon-impact-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.carbon-impact-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/********************What is digital carbon footprint? style end********************/
+
+
+
+/******************** Section 1: Direct and indirect List Style End ********************/
+.carbon-section-list {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.carbon-section-list h2 {
+    border-bottom: 3px solid #4a90e2;
+    padding-bottom: 0.4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #2b4f75;
+}
+
+.carbon-section-list h3 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+.carbon-section-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carbon-section-list li {
+    display: flex;
+    gap: 1.2rem;
+    align-items:center;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f8faff;
+    border: 1px solid #e0eaf5;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carbon-section-list li:hover {
+    background-color: #cfedff;
+    box-shadow: 0 2px 10px rgba(0, 128, 255, 0.08);
+}
+
+.carbon-section-list .icon {
+    font-size: 1.8rem;
+    color: #4a90e2;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    user-select: none;
+}
+
+.carbon-section-list p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #333;
+    opacity: 0.95;
+}
+
+
+/******************** Section 2: Cards Grid Style Start ********************/
+.carbon-section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.carbon-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.15);
+    padding: 1.5rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carbon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(160, 174, 190, 0.3);
+}
+
+.carbon-card .card-icon {
+    font-size: 3rem;
+    color: #4a90e2;
+}
+
+.carbon-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a2d5d;
+}
+
+.carbon-card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #444;
+}
+
+/******************** Section 2: Cards Grid Style End ********************/
+
+/******************** Section 3: Hover Info Boxes Style Start ********************/
+.carbon-section-hover {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.carbon-section-hover h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #d9e2ed;
+    padding-bottom: 0.3rem;
+}
+
+.carbon-hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.carbon-hover-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: #f0f6ff;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(74, 144, 226, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    color: #4a90e2;
+    font-weight: 700;
+    font-size: 3rem;
+    user-select: none;
+}
+
+.carbon-hover-box:hover {
+    background: white;
+    color: #1a2d5d;
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.25);
+}
+
+.carbon-hover-box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    color: #222;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 1.5rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    height: 250px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px); /* 👈 initially slightly below */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+.carbon-hover-box:hover .content {
+    opacity: 1;
+    transform: translateY(0); /* 👈 slide into view */
+    pointer-events: auto;
+}
+
+
+
+/******************** Section 3: Hover Info Boxes Style End ********************/
+
+/******************** Section 4: Container Wrapper Style Start ********************/
+.digital-carbon-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+/******************** Section 4: Container Wrapper Style End ********************/
+
+/********************everyday example of digital carbon footprint style end********************/

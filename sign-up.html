@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="sign-up.css">
+
+  <!--ICON-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+
+</head>
+
+<body class="login-page">
+
+  <section>
+    <div class="container">
+
+      <!-- LEFT SIDE -->
+      <div class="left">
+        <button class="back-button" onclick="history.back()">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+        <img src="image/img_04.svg" alt="Sign Up Image"
+          style="max-width: 100%; border-radius: 15px; margin-bottom: 20px;">
+        <div>
+          <h2>Start your journey with us…</h2>
+          <p>create an account ✨📝🌟</p>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right">
+
+
+        <h2 class="login-heading">Create Account</h2>
+        <p class="sub-heading">Please fill in your details</p>
+
+        <!-- SIGN UP FORM -->
+        <div class="form-wrapper">
+          <form action="#" method="POST">
+
+            <!-- Username -->
+            <div class="input-group">
+              <label for="username" class="input-label">Username</label>
+              <input type="text" id="username" name="username" class="input-field" required
+                placeholder="Choose a username">
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+              <label for="email" class="input-label">Email</label>
+              <input type="email" id="email" name="email" class="input-field" required placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+              <label for="password" class="input-label">Password</label>
+              <input type="password" id="password" name="password" class="input-field" required minlength="6"
+                placeholder="Create a password">
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="input-group">
+              <label for="confirmPassword" class="input-label">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="input-field" required
+                minlength="6" placeholder="Re-enter your password"
+                oninput="this.setCustomValidity(this.value !== password.value ? 'Passwords do not match' : '')">
+            </div>
+
+            <!-- Show Password Checkbox -->
+            <div class="input-group">
+              <label>
+                <input type="checkbox"
+                  onclick="document.getElementById('password').type = this.checked ? 'text' : 'password'; document.getElementById('confirmPassword').type = this.checked ? 'text' : 'password';">
+                Show Password
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-button">Sign Up</button>
+
+            <!-- Social Signup -->
+            <div class="social-signup">
+              <p>Or sign up with</p>
+              <div class="social-icons">
+                <a href="#" class="social-icon google" aria-label="Sign up with Google"><i
+                    class="fab fa-google fa-2x"></i></a>
+                <a href="#" class="social-icon tiktok" aria-label="Sign up with TikTok"><i
+                    class="fab fa-tiktok fa-2x"></i></a>
+                <a href="#" class="social-icon facebook" aria-label="Sign up with Facebook"><i
+                    class="fab fa-facebook fa-2x"></i></a>
+              </div>
+            </div>
+
+            <!-- Login Link -->
+            <div class="signup-link">
+              <span>Already have an account?</span> <a href="log-in.html">Log in</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+</body>
+
+</html>
